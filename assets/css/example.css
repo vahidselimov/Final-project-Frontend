@@ -1,0 +1,595 @@
+body {
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+body.hidden-scrolling {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/example-intro-bg.jpg);
+  width: 1520px;
+  height: 450px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center 90%;
+  background-attachment: fixed;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  border-radius: 4px;
+  position: relative;
+  align-items: center;
+  bottom: 1px;
+}
+
+.header .logo a {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.header .nav-menu {
+  padding: 0 15px;
+}
+.header .menu > .menu-item {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+.header .menu > .menu-item > a {
+  display: block;
+  padding: 12px 0;
+  font-size: 12.6px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 2px;
+}
+.header .menu > .menu-item > a .plus {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  position: relative;
+  margin-left: 5px;
+  pointer-events: none;
+}
+.header .menu > .menu-item > a .plus:before, .header .menu > .menu-item > a .plus:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  background-color: #000000;
+  height: 2px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.header .menu > .menu-item:hover > a .plus:before, .header .menu > .menu-item:hover > a .plus:after {
+  background-color: #333333;
+}
+.header .menu > .menu-item:hover > a {
+  color: #222222;
+}
+.header .menu > .menu-item > a .plus:after {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.header .menu > .menu-item > .sub-menu > .menu-item > a:hover {
+  color: #222222;
+}
+.header .menu > .menu-item > .sub-menu {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-top: 1px solid #333333;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.header .menu > .menu-item > .sub-menu > .menu-item {
+  display: block;
+}
+.header .menu > .menu-item > .sub-menu > .menu-item > a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.header .open-nav-menu {
+  height: 34px;
+  width: 40px;
+  margin-right: 15px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .open-nav-menu span {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background-color: #000000;
+  position: relative;
+}
+.header .open-nav-menu span:before, .header .open-nav-menu span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  box-sizing: border-box;
+}
+.header .open-nav-menu span:before {
+  top: -7px;
+}
+.header .open-nav-menu span:after {
+  top: 7px;
+}
+.header .close-nav-menu {
+  height: 40px;
+  width: 40px;
+  margin: 0 0 15px 15px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.header .close-nav-menu i {
+  font-size: 36px;
+  color: #000000;
+}
+.header .menu-overlay {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.header .menu-item.active > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #4e4d4d;
+  bottom: 2px;
+  left: calc(50% - 35px);
+}
+.header .title {
+  margin: 10% 20%;
+  text-align: center;
+  position: absolute;
+}
+.header .title h3 {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  -webkit-text-decoration: none solid rgb(255, 255, 255);
+          text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  word-spacing: 0px;
+  color: #ffffff;
+}
+.header .title .text {
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 18px;
+  line-height: 30.42px;
+  -webkit-text-decoration: none solid rgb(255, 255, 255);
+          text-decoration: none solid rgb(255, 255, 255);
+  word-spacing: 0px;
+  color: #ffffff;
+}
+
+.header::before {
+  transition: all 0.1s ease-out;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 70%;
+}
+
+@media (min-width: 992px) {
+  .header .menu > .menu-item-has-children:hover > .sub-menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .menu > .menu-item-has-children:hover > a .plus:after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+/*home section*/
+.home-section {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+  background-image: url("../img/home.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+/* responsive */
+@media (max-width: 1097px) {
+  .header .menu-overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header .nav-menu {
+    position: fixed;
+    right: -280px;
+    visibility: hidden;
+    width: 280px;
+    height: 100%;
+    top: 0;
+    overflow-y: auto;
+    color: #ffffff;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: all 0.5s ease;
+  }
+  .header .nav-menu.open {
+    visibility: visible;
+    right: 0px;
+  }
+  .header .menu > .menu-item {
+    display: block;
+    margin: 0;
+  }
+  .header .menu > .menu-item-has-children > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .menu > .menu-item > a {
+    color: #ffffff;
+    padding: 12px 15px;
+    border-bottom: 1px solid #333333;
+  }
+  .header .menu > .menu-item:first-child > a {
+    border-top: 1px solid #333333;
+  }
+  .header .menu > .menu-item > a .plus:before, .header .menu > .menu-item > a .plus:after {
+    background-color: #ffffff;
+  }
+  .header .menu > .menu-item-has-children.active > a .plus:after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .header .menu > .menu-item > .sub-menu {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateY(0px);
+    padding: 0px;
+    left: auto;
+    top: auto;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .header .menu > .menu-item > .sub-menu > .menu-item > a {
+    padding: 12px 45px;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
+  }
+  .header .close-nav-menu,
+.header .open-nav-menu {
+    display: flex;
+  }
+}
+.sub-menu .flx {
+  display: flex;
+}
+.sub-menu .flx img {
+  width: 40px;
+  height: 40px;
+  margin: 3px 15px 3px 0;
+}
+.sub-menu .flex {
+  margin-left: 20px;
+}
+.sub-menu .flex h3 {
+  font-size: 16px;
+}
+.sub-menu .flex .beta {
+  background-color: #1abc9c;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+}
+.sub-menu .flex span {
+  padding: 1px;
+  color: #333333;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#picture .container .row #tab-menu .menu {
+  text-align: center;
+  margin-left: 10%;
+  border-bottom: 1px solid #4d4d4d;
+  display: flex;
+  cursor: pointer;
+}
+#picture .container .row #tab-menu .menu div {
+  margin: 20px 5%;
+  padding: 20px;
+  display: inline-block;
+}
+#picture .container .row #tab-menu .menu div img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+#picture .container .row #tab-menu .menu div h2 {
+  text-align: center;
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+  color: rgb(0, 0, 0);
+}
+#picture .container .row #tab-menu .body {
+  margin-top: 10%;
+}
+#picture .container .row #tab-menu .body .item .row {
+  display: flex;
+}
+#picture .container .row #tab-menu .body .item .row .image {
+  text-align: center;
+  padding: 15px;
+}
+#picture .container .row #tab-menu .body .item .row .image img {
+  height: 187.275px;
+  width: 300px;
+}
+#picture .container .row #tab-menu .body .item .row .image p {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 20px;
+  -webkit-text-decoration: none solid rgb(51, 51, 51);
+          text-decoration: none solid rgb(51, 51, 51);
+}
+#picture .container .row #tab-menu .body .item .row .image small {
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+#picture .container .row #tab-menu .body .item .titles {
+  text-align: center;
+}
+#picture .container .row #tab-menu .body .item .titles h2 {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 39.6px;
+  color: rgb(51, 51, 51);
+}
+#picture .container .row #tab-menu .body .item .titles p {
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28px;
+  color: rgb(95, 95, 95);
+}
+#picture .container .row #tab-menu .body .item .actions {
+  padding-top: 7%;
+  display: flex;
+  margin-left: 2.8%;
+}
+#picture .container .row #tab-menu .body .item .actions .image a {
+  text-decoration: none;
+}
+#picture .container .row #tab-menu .body .item .actions .image a img {
+  width: 90%;
+}
+#picture .container .row #tab-menu .body .item .actions .title h3 {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 40px;
+  text-align: start;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  color: rgb(29, 29, 29);
+  height: 40px;
+  width: 555px;
+  margin: 20px 0px 8px;
+  padding: 0px;
+}
+#picture .container .row #tab-menu .body .item .actions .title p {
+  /* Font & Text */
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: start;
+  color: rgb(95, 95, 95);
+  margin: 0px 0px 30px;
+  padding: 0px;
+}
+#picture .container .row #tab-menu .body .item .actions .title .icons a {
+  text-decoration: none;
+}
+#picture .container .row #tab-menu .body .item .actions .title .icons a i {
+  font-size: 14px;
+  color: rgb(95, 95, 95);
+  height: 14px;
+  width: 19.5px;
+}
+#picture .container .row #tab-menu .body .item .actions .title .icons a span {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 12px;
+  text-align: start;
+  color: rgb(84, 84, 84);
+  height: 12px;
+  width: 84.675px;
+  margin: 0px 0px 0px 8px;
+}
+#picture .container .row #tab-menu .body .item .actions .title .icons a span:hover {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 12px;
+  text-align: start;
+  color: #000000;
+  height: 12px;
+  width: 84.675px;
+  margin: 0px 0px 0px 8px;
+}
+#picture .container .row #tab-menu .body .item .actions .title .icons a .fa-solid.fa-circle-arrow-right {
+  font-size: 14px;
+  color: rgb(95, 95, 95);
+  height: 14px;
+  width: 19.5px;
+  margin-left: 5%;
+}
+#picture .container .row #tab-menu .body .item .made {
+  margin: 10% 0 0 3%;
+  text-align: center;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+#picture .container .row #tab-menu .body .item .made .rigth p {
+  text-align: center;
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 17.1429px;
+  color: #464646;
+  margin: 0 0 40px 0;
+}
+#picture .container .row #tab-menu .body .item .made .images {
+  display: flex;
+}
+#picture .container .row #tab-menu .body .item .made .images .image img {
+  display: inline;
+  width: 100%;
+  padding: 30px;
+}
+#picture .container .row #tab-menu .body .item .made .images .image img:hover {
+  display: inline;
+  width: 100%;
+  box-shadow: 5px 10px 2px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+#picture .container .row #tab-menu .body .item .made .images .image h5 {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(95, 95, 95);
+  margin: 20px 0px 15px;
+}
+#picture .container .row #tab-menu .body .item .act {
+  display: flex;
+}
+#picture .container .row #tab-menu .body .item .act .img {
+  text-align: center;
+}
+#picture .container .row #tab-menu .body .item .act .img a {
+  text-decoration: none;
+}
+#picture .container .row #tab-menu .body .item .act .img a p {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+  margin: 12px 0px 10px;
+}
+#picture .container .row #tab-menu .body .item .act .img a small {
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+  -webkit-text-decoration: none solid rgb(153, 153, 153);
+          text-decoration: none solid rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
+}
+#picture .active {
+  display: block !important;
+}/*# sourceMappingURL=example.css.map */
