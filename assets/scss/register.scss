@@ -18,3 +18,114 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgb(46, 83, 59), rgba(143, 211, 244, 1))
     }
+    * {
+        box-sizing: border-box;
+    }
+    
+
+    
+    .input-container {
+        width: 300px;
+    }
+    
+    .input-group {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 34.4px;
+            color: rgb(79, 79, 79);
+            height: 44.95px;
+            width: 540px;
+    }
+    
+    .input-group input {
+        padding: 0.8rem 3rem 0.8rem 0.8rem;
+        width: 100%;
+        background: #112d37;
+        outline: none;
+        border: 1px solid #215164;
+        border-radius: 4px;
+        color: #fff;
+        transition: width 0.9s, height 0.9s, border-radius 0.9s;
+        font-size: 16px;
+    }
+    
+    .input-group input::placeholder {
+        color: #346a80;
+    }
+    
+    .input-group input:focus {
+        border: 1px solid #55b7dd;
+        box-shadow: 0px 0px 2px 2px #55b7dd34;
+    }
+    .input-group .toggle {
+        position: absolute;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 99;
+    }
+    
+    .input-group .ripple {
+        background: #fff;
+        display: block;
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        right: 10px;
+        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        z-index: 1;
+    }
+    
+    i {
+        color: #091a20;
+    }
+    
+    .pass-strength {
+        display: flex;
+        align-items: center;
+        margin-top: 3px;
+    }
+    
+    .strength-label {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .strength-percent {
+        flex: 1;
+        height: 5px;
+        border-radius: 10px;
+        display: block;
+        background: #eee;
+    }
+    
+    .strength-percent span {
+        display: block;
+        height: 100%;
+        transition: all 0.4s;
+        border-radius: 10px;
+    }
+    
+    .weak {
+        background: red;
+        width: 33%;
+    }
+    
+    .average {
+        background: #ffd000;
+        width: 66%;
+    }
+    
+    .strong {
+        background: green;
+        width: 100%;
+    }
