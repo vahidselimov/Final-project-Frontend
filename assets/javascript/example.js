@@ -3,7 +3,7 @@
 //   })
 
 //Tab-Menu//
-let allMenuDiv = document.querySelectorAll("#tab-menu .menu div");
+let allMenuDiv = document.querySelectorAll("#tab-menu .menu li");
 let allItemElem = document.querySelectorAll("#tab-menu .body .item");
 for (const menu of allMenuDiv) {
   menu.addEventListener("click", function () {

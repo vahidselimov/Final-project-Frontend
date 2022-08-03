@@ -1,0 +1,41 @@
+main #titles .titles .title {
+  height: 2700px;
+  width: 975px;
+  margin: 0 0 0 98px;
+  padding: 0 15px 0 15px;
+  min-height: 1px;
+}
+main #titles .titles .title .text ul {
+  margin: 25px 0 0 0;
+  width: 945px;
+  padding: 0 0 0 40px;
+}
+main #titles .titles .title .text ul li {
+  list-style: outside;
+  color: #5f5f5f;
+}
+main #titles .titles .title .text .ul ul li {
+  list-style: outside;
+}
+main #titles .titles .title .text .ul ul li p {
+  color: #5f5f5f;
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  line-height: 30px;
+  font-size: 18px;
+}
+main #titles .titles .title .text .ul ul li p strong {
+  color: #111111;
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+main #titles .titles .title .text .ul ul li p span a {
+  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #16A085;
+}
+main #titles .titles .title .text p span a {
+  text-decoration: none;
+  color: #16A085;
+}/*# sourceMappingURL=cookie policy.css.map */

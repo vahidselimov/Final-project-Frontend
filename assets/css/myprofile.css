@@ -1,0 +1,18 @@
+main #first .first {
+  margin-top: 10%;
+}
+main #first .first .col-lg-12 .form-group {
+  padding: 20px;
+}
+main #first .first .col-lg-12 .form-group input {
+  padding: 20PX;
+  text-align: center;
+  border: solid #1abc9c;
+}
+main #first .first .col-lg-12 .btn {
+  background-color: #1abc9c;
+  border: none;
+}
+main #first .first .col-lg-12 .d-flex #subscribe_me {
+  background-color: #1abc9c !important;
+}/*# sourceMappingURL=myprofile.css.map */

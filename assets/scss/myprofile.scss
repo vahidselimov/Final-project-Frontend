@@ -1,0 +1,31 @@
+main {
+	#first {
+		.first {
+			margin-top: 10%;
+
+			.col-lg-12 {
+				.form-group {
+					padding: 20px;
+
+					input {
+						padding: 20PX;
+						text-align: center;
+						border: solid #1abc9c;
+					}
+				}
+
+				.btn {
+					background-color: #1abc9c;
+					border: none;
+				}
+
+				.d-flex {
+					#subscribe_me {
+						background-color: #1abc9c !important;
+					}
+				}
+				
+			}
+		}
+	}
+}

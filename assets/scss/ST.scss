@@ -150,6 +150,7 @@ a {
         }
 
         >.sub-menu {
+            z-index: 100;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
             width: 420px;
             position: absolute;
@@ -579,6 +580,8 @@ a {
 
 //main//
 main {
+
+    //more//
     #more {
         .titles {
             margin: 0 120px 0 120px;
@@ -586,6 +589,7 @@ main {
 
             .container {
                 .row {
+
                     .more {
 
                         p {
@@ -634,8 +638,8 @@ main {
                     }
 
                     .invoices {
-                        // margin-top: 15%;
-                        margin: 120px  0 0;
+                        margin-top: 15%;
+                        // margin: 120px  0 0;
                         padding: 0 0 0 60px;
                         display: flex;
 
@@ -648,6 +652,7 @@ main {
 
                         .text {
                             margin-left: 7%;
+
                             .invo {
                                 h3 {
                                     font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -701,8 +706,8 @@ main {
 
                                 }
 
-                               
-                                
+
+
                                 a {
                                     text-decoration: none;
                                     font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -712,18 +717,913 @@ main {
                                     line-height: 17px;
                                     text-align: left;
                                     color: #595959;
-                                    
+
                                 }
-                              
-                             
-                               
+
+
+
                             }
 
                         }
                     }
 
+                    .contracts {
+                        margin-top: 15%;
+                        // margin: 120px  0 0;
+                        padding: 0 0 0 60px;
+                        display: flex;
+
+                        .image {
+                            img {
+                                height: 639px;
+                                width: 530px;
+                                margin-left: 7%;
+                            }
+                        }
+
+                        .text {
+
+                            .invo {
+                                h3 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    letter-spacing: 2.5px;
+                                    line-height: 19.5px;
+                                    color: #AFAFAF;
+                                }
+
+                                h2 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                    text-align: left;
+                                    margin: 20px 0 0;
+                                }
+
+                                p {
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    font-size: 18px;
+                                    line-height: 30.42px;
+                                    text-align: left;
+                                    color: #5f5f5f;
+                                    margin: 24px 0 0 0;
+                                }
+
+                            }
+
+                            .icon {
+                                margin: 48px 0 60px 0;
+                                text-align: left;
+
+                                i {
+                                    color: #1ABC9C;
+                                    font-size: 16px;
+                                    display: block;
+                                    height: 23px;
+                                    width: 530px;
+                                    padding: 4%;
+
+                                    span {
+                                        font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        text-align: left;
+                                        color: #000;
+                                        margin: 0 0 20px 10px;
+
+                                    }
+
+                                }
+
+
+
+                                a {
+                                    text-decoration: none;
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 17px;
+                                    text-align: left;
+                                    color: #595959;
+
+                                }
+
+
+
+                            }
+
+                        }
+                    }
+
+                    .quest {
+                        margin-top: 15%;
+                        // margin: 120px  0 0;
+                        padding: 0 0 0 60px;
+                        display: flex;
+
+                        .image {
+                            img {
+                                height: 639px;
+                                width: 530px;
+
+                            }
+                        }
+
+                        .text {
+                            margin-left: 7%;
+
+                            .invo {
+                                h3 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    letter-spacing: 2.5px;
+                                    line-height: 19.5px;
+                                    color: #AFAFAF;
+                                }
+
+                                h2 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                    text-align: left;
+                                    margin: 20px 0 0;
+                                }
+
+                                p {
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    font-size: 18px;
+                                    line-height: 30.42px;
+                                    text-align: left;
+                                    color: #5f5f5f;
+                                    margin: 24px 0 0 0;
+                                }
+
+                            }
+
+                            .icon {
+                                margin: 48px 0 60px 0;
+                                text-align: left;
+
+                                i {
+                                    color: #1ABC9C;
+                                    font-size: 16px;
+                                    display: block;
+                                    height: 23px;
+                                    width: 530px;
+                                    padding: 4%;
+
+                                    span {
+                                        font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        text-align: left;
+                                        color: #000;
+                                        margin: 0 0 20px 10px;
+
+                                    }
+
+                                }
+
+
+
+                                a {
+                                    text-decoration: none;
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 17px;
+                                    text-align: left;
+                                    color: #595959;
+
+                                }
+
+
+
+                            }
+
+                        }
+                    }
+
+                    .quotes {
+                        margin-top: 15%;
+                        // margin: 120px  0 0;
+                        padding: 0 0 0 60px;
+                        display: flex;
+
+                        .image {
+                            img {
+                                height: 639px;
+                                width: 530px;
+                                margin-left: 7%;
+                            }
+                        }
+
+                        .text {
+
+                            .invo {
+                                h3 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    letter-spacing: 2.5px;
+                                    line-height: 19.5px;
+                                    color: #AFAFAF;
+                                }
+
+                                h2 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                    text-align: left;
+                                    margin: 20px 0 0;
+                                }
+
+                                p {
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    font-size: 18px;
+                                    line-height: 30.42px;
+                                    text-align: left;
+                                    color: #5f5f5f;
+                                    margin: 24px 0 0 0;
+                                }
+
+                            }
+
+                            .icon {
+                                margin: 48px 0 60px 0;
+                                text-align: left;
+
+                                i {
+                                    color: #1ABC9C;
+                                    font-size: 16px;
+                                    display: block;
+                                    height: 23px;
+                                    width: 530px;
+                                    padding: 4%;
+
+                                    span {
+                                        font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        text-align: left;
+                                        color: #000;
+                                        margin: 0 0 20px 10px;
+
+                                    }
+
+                                }
+
+
+
+                                a {
+                                    text-decoration: none;
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 17px;
+                                    text-align: left;
+                                    color: #595959;
+
+                                }
+
+
+
+                            }
+
+                        }
+                    }
+
+                    .brand {
+                        margin-top: 15%;
+                        // margin: 120px  0 0;
+                        padding: 0 0 0 60px;
+                        display: flex;
+
+                        .image {
+                            img {
+                                height: 639px;
+                                width: 530px;
+
+                            }
+                        }
+
+                        .text {
+                            margin-left: 7%;
+
+                            .invo {
+                                h3 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    letter-spacing: 2.5px;
+                                    line-height: 19.5px;
+                                    color: #AFAFAF;
+                                }
+
+                                h2 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                    text-align: left;
+                                    margin: 20px 0 0;
+                                }
+
+                                p {
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    font-size: 18px;
+                                    line-height: 30.42px;
+                                    text-align: left;
+                                    color: #5f5f5f;
+                                    margin: 24px 0 0 0;
+                                }
+
+                            }
+
+                            .icon {
+                                margin: 48px 0 60px 0;
+                                text-align: left;
+
+                                i {
+                                    color: #1ABC9C;
+                                    font-size: 16px;
+                                    display: block;
+                                    height: 23px;
+                                    width: 530px;
+                                    padding: 4%;
+
+                                    span {
+                                        font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        text-align: left;
+                                        color: #000;
+                                        margin: 0 0 20px 10px;
+
+                                    }
+
+                                }
+
+
+
+                                a {
+                                    text-decoration: none;
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 17px;
+                                    text-align: left;
+                                    color: #595959;
+
+                                }
+
+
+
+                            }
+
+                        }
+                    }
                 }
             }
         }
     }
+
+    //feature//
+    #feature {
+        .feature {
+            margin: 60px 120px 0 120px;
+            padding: 0 50px 40px 50px;
+
+            .container {
+                .row {
+                    .title {
+                        text-align: center;
+
+                        h2 {
+                            font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                            font-size: 13px;
+                            font-weight: 700;
+                            letter-spacing: 2.5px;
+                            line-height: 19.5px;
+                            color: #AFAFAF;
+                        }
+
+                        h3 {
+                            font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                            font-size: 30px;
+                            line-height: 40px;
+                            height: 80px;
+                            width: 450px;
+                            margin: 20px 365px 60px 365px;
+                            color: #1d1d1d;
+                        }
+
+
+
+                    }
+
+                    .cards {
+                        // display: flex;
+
+                        .row {
+
+                            justify-content: space-between;
+
+                            .icons {
+                                padding: 3%;
+
+                                i {
+                                    font-size: 30px;
+                                    color: #7d7d7d;
+                                }
+
+                                h3 {
+                                    font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    font-size: 22px;
+                                    line-height: 27.5px;
+                                    text-align: left;
+                                    margin: 34px 0 0;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    font-size: 18px;
+                                    line-height: 30.42px;
+                                    color: #5f5f5f;
+                                    height: 60px;
+                                    width: 367px;
+                                    margin: 16px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #image {
+        position: relative;
+        overflow: hidden;
+
+        .image {
+
+            img {
+                margin-left: 1.2%;
+                height: 690px;
+                width: 1480px
+            }
+        }
+
+        .title {
+            position: absolute;
+            top: 130px;
+            left: 90px;
+            height: 80px;
+            color: #fff;
+            width: 380px;
+
+            h3 {
+                font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0 0 25px 0;
+            }
+
+            p {
+                font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    #faq {
+        padding: 10%;
+
+        .accordion-item {
+            border: none;
+
+            .accordion-body {
+                font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                font-size: 18px;
+                line-height: 30.42px;
+                width: 680px;
+                margin: 0 0 16px 0;
+                padding: 0 40px 0 0;
+                strong {
+                    color: #7d7d7d;
+                  
+                }
+
+                ul {
+                    margin-left: 2%;
+                    margin-top: 3%;
+
+                    li {
+                        list-style: outside;
+
+                    }
+                }
+
+                p {
+                 margin-left: 100px;
+                 width: 700px;
+                }
+            }
+        }
+
+        .title {
+            h3 {
+                font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-size: 32px;
+                line-height: 40px;
+                padding: 2%;
+                color: #000;
+            }
+        }
+    }
+    //cards//
+	#carts {
+		.container {
+			.row {
+				display: flex;
+				justify-content: space-between;
+
+				.title {
+					margin: 0 0 50px;
+
+					h3 {
+						font-size: 35px;
+						text-align: center;
+						color: #1d1d1d;
+						font-weight: 400;
+						letter-spacing: 0;
+						line-height: 1.5;
+						margin: 0;
+					}
+				}
+
+				.card {
+					width: 30%;
+
+					.product {
+						padding: 60px 30px;
+						margin: 15px;
+
+						a {
+							text-decoration: none;
+
+							.image {
+
+
+
+								img {
+									width: 30px;
+									height: 30px;
+								}
+
+								span {
+
+									font-size: 20px;
+									margin: 15px;
+									color: #000;
+									font-family: Arial, Helvetica, sans-serif;
+
+								}
+
+							}
+
+							.text {
+								margin-top: 30px;
+
+								p {
+									line-height: 2;
+									text-align: left;
+									font-size: 18px;
+									color: #595959;
+									font-family: adobe-garamond-pro, Garamond, Georgia, serif
+								}
+							}
+
+							.learn {
+								h5 {
+									color: #595959;
+									font-size: 12px;
+									font-weight: 600;
+									letter-spacing: 2px;
+									text-transform: uppercase;
+
+									font-family: proxima-nova,
+										Lato,
+										"Lucida Sans Unicode",
+										"Lucida Grande",
+										sans-serif;
+								}
+
+								i {
+									margin-left: 10px;
+									font-size: 10px;
+								}
+							}
+						}
+					}
+				}
+
+				.card:hover {
+					box-shadow: 5px 5px 13px #000;
+					transition: box-shadow .4s ease-out;
+					padding: 20px;
+					width: 30%;
+
+					.product {
+						padding: 60px 30px;
+						margin: 15px;
+
+						a {
+							text-decoration: none;
+
+							.image {
+
+
+
+								img {
+									width: 30px;
+									height: 30px;
+								}
+
+								span {
+
+									font-size: 20px;
+									margin: 15px;
+									color: #000;
+									font-family: Arial, Helvetica, sans-serif;
+
+								}
+
+							}
+
+							.text {
+								margin-top: 30px;
+
+								p {
+									line-height: 2;
+									text-align: left;
+									font-size: 18px;
+									color: #595959;
+									font-family: adobe-garamond-pro, Garamond, Georgia, serif
+								}
+							}
+
+							.learn {
+								h5 {
+									color: #595959;
+									font-size: 12px;
+									font-weight: 600;
+									letter-spacing: 2px;
+									text-transform: uppercase;
+
+									font-family: proxima-nova,
+										Lato,
+										"Lucida Sans Unicode",
+										"Lucida Grande",
+										sans-serif;
+								}
+
+								i {
+									margin-left: 10px;
+									font-size: 10px;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+    //get//
+	#get {
+		margin-top: 5%;
+		background-color: #f6fbfa;
+		padding-bottom: 150px !important;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		padding: 10px;
+
+		.get {
+			text-align: center;
+
+			.container {
+
+				.row {
+					justify-content: center;
+
+					.title {
+						margin-top: 20%;
+						color: #1d1d1d;
+						font-size: 32px;
+						font-weight: 400;
+						letter-spacing: 0;
+						line-height: 1.25;
+						margin: 10% 0 5% 0;
+					}
+
+					.text {
+						color: #555;
+						font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+						font-size: 20px;
+						position: relative;
+					}
+
+					.text::after {
+						content: "";
+						position: absolute;
+						display: block;
+						width: 30px;
+						height: 1.5px;
+						background-color: #1abc9c;
+						top: 30px;
+						left: calc(50% - 155px);
+					}
+
+
+
+					a {
+						text-align: center;
+						background-color: #1abc9c;
+						border: none;
+						color: #fff;
+						display: inline-block;
+						font-size: 13px;
+						font-weight: 700;
+						letter-spacing: 2px;
+						line-height: 1.5;
+						text-transform: uppercase;
+						-webkit-font-smoothing: antialiased;
+						line-height: 12px;
+						font-size: 13px;
+						padding: 20px 2px;
+						width: 20%;
+						margin: 20px;
+						margin-right: 3%;
+					}
+
+				}
+			}
+		}
+	}
+
+}
+//...Footer...//
+footer {
+
+
+	.footer {
+		padding: 69px 15% 60px 15%;
+		background-color: #212121;
+		.container {
+			.row {
+				.product {
+					h6 {
+						margin-bottom: 25px;
+						display: block;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 2em;
+						letter-spacing: .15em;
+						text-transform: uppercase;
+						opacity: .7;
+						color: #fff;
+					}
+
+					ul {
+						li {
+							padding: 10px;
+
+							a {
+								line-height: 22.4px;
+								text-align: start;
+								color: #fff;
+								font-size: 14px;
+								margin: 0 0 0 -10px;
+								font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+								text-decoration: none;
+								
+							}
+						}
+					}
+				}
+				.resour {
+					h6 {
+						margin-bottom: 25px;
+						display: block;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 2em;
+						letter-spacing: .15em;
+						text-transform: uppercase;
+						opacity: .7;
+						color: #fff;
+					}
+
+					ul {
+						li {
+							padding: 10px;
+
+							a {
+								line-height: 22.4px;
+								text-align: start;
+								color: #fff;
+								font-size: 14px;
+								margin: 0 0 0 -10px;
+								font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+								text-decoration: none;
+								
+							}
+						}
+					}
+				}
+				.company {
+					h6 {
+						margin-bottom: 25px;
+						display: block;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 2em;
+						letter-spacing: .15em;
+						text-transform: uppercase;
+						opacity: .7;
+						color: #fff;
+					}
+
+					ul {
+						li {
+							padding: 10px;
+
+							a {
+								line-height: 22.4px;
+								text-align: start;
+								color: #fff;
+								font-size: 14px;
+								margin: 0 0 0 -10px;
+								font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+								text-decoration: none;
+								
+							}
+						}
+					}
+				}
+				.pixieset{
+					.image{
+						img{
+						width: 150px;	
+						}
+						
+					}
+					.title{
+						margin-top: 40px;
+						font-style: normal;
+						font-weight: 450;
+						font-size: 14px;
+						line-height: 150%;
+						font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+						color: #ddd;
+					}
+					.socialmedias{
+						h6{
+				       margin-top: 20%;
+						display: block;
+						font-weight: 600;
+						font-size: 12px;
+						line-height: 2em;
+						letter-spacing: .15em;
+						text-transform: uppercase;
+						opacity: .7;
+						color: #fff;
+						}
+						ul{
+							display: flex;
+					
+							li{
+								a{
+									margin-right: 30px !important;
+									color: white;
+									font-size: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

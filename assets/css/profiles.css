@@ -1,0 +1,233 @@
+body {
+  overflow-x: hidden;
+}
+body header .header nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+body header .header nav .nav {
+  background-color: #F5F3F3;
+  height: 50px;
+  width: 1620px;
+  margin: 0 0 20px 0;
+  min-height: 50px;
+  position: fixed;
+  top: 0px;
+  bottom: 652px;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+}
+body header .header nav .nav .row {
+  justify-content: end;
+  margin-top: 5px;
+}
+body header .header nav .nav .row .logo {
+  margin: 0 30px 0 30px;
+  padding: 10px 0 15px 0;
+}
+body header .header nav .nav .row .logo a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  letter-spacing: 10px;
+  line-height: 20px;
+}
+body header .header nav .nav .row .profile {
+  position: absolute;
+  text-align: end;
+  margin-top: 0.3%;
+}
+body header .header nav .nav .row .profile span {
+  color: #5f5f5f;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0 0 0 10px;
+}
+body header .header nav .nav .row .profile .dropdown-menu {
+  height: 200px;
+}
+body header .header nav .nav .row .profile .dropdown-menu li {
+  text-align: left;
+  padding: 15px;
+}
+body header .header nav .nav .row .profile .dropdown-menu li i {
+  margin-left: 5%;
+  color: #16a;
+}
+body header .header nav .nav .row .profile .dropdown-menu li i:hover {
+  margin-left: 5%;
+  color: #fff;
+}
+body header .header nav .nav .row .profile .dropdown-menu li i:active {
+  margin-left: 5%;
+  color: #fff;
+}
+body main #quicks .quicks .photos {
+  margin-top: 10%;
+  width: 100%;
+  height: 300px;
+  background-color: #F7F7F7;
+}
+body main #quicks .quicks .photos a {
+  text-decoration: none;
+  color: #000000;
+}
+body main #quicks .quicks .photos a h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 9%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+body main #quicks .quicks .photos a p {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+}
+body main #quicks .quicks .albums {
+  margin-top: 10%;
+  width: 100%;
+  height: 300px;
+  background-color: #F7F7F7;
+}
+body main #quicks .quicks .albums a {
+  text-decoration: none;
+  color: #000000;
+}
+body main #quicks .quicks .albums a h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 12%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 29px;
+}
+body main #quicks .quicks .albums a p {
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+body main #quicks .quicks .boxs {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+body main #quicks .quicks .boxs .notifications {
+  height: 364px;
+  width: 457.5px;
+  padding: 20px 20px 20px 20px;
+  background-color: #F7F7F7;
+}
+body main #quicks .quicks .boxs .notifications i {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 900;
+  line-height: 13px;
+  margin: 10px;
+}
+body main #quicks .quicks .boxs .notifications span {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px;
+  line-height: 19.5px;
+}
+body main #quicks .quicks .boxs .notifications .box {
+  height: 292px;
+  background-color: #fff;
+  width: 417.5px;
+  margin: 15px 0 0 0;
+  padding: 10px 15px 10px 15px;
+  min-height: 1px;
+}
+body main #quicks .quicks .boxs .notifications .box .title {
+  height: 72px;
+  text-align: center;
+  width: 387.5px;
+  margin: 80px 0 0 0;
+}
+body main #quicks .quicks .boxs .notifications .box .title h3 {
+  margin: 10px 0 10px 0;
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.5px;
+}
+body main #quicks .quicks .boxs .notifications .box .title p {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  line-height: 19.5px;
+  color: #4f4f4f;
+  margin: 15px 0 10px 0;
+}
+body main #quicks .quicks .boxs .quicklinks {
+  height: 364px;
+  width: 457.5px;
+  padding: 20px 20px 20px 20px;
+  background-color: #F7F7F7;
+}
+body main #quicks .quicks .boxs .quicklinks i {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 900;
+  line-height: 13px;
+  margin: 10px;
+}
+body main #quicks .quicks .boxs .quicklinks span {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px;
+  line-height: 19.5px;
+}
+body main #quicks .quicks .boxs .quicklinks .box {
+  height: 300px;
+  width: 417.5px;
+  margin: 15px 0 0 0;
+  padding: 20px 15px 0 15px;
+  min-height: 1px;
+  background-color: #F7F7F7;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts {
+  height: 70px;
+  width: 417.5px;
+  padding: 11px 15px 11px 15px;
+  color: #000000;
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts .icons i {
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts .title {
+  width: 277px;
+  padding: 0 0 0 20px;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts .title a {
+  color: #000000;
+  text-decoration: none;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts .title a h3 {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 19.5px;
+}
+body main #quicks .quicks .boxs .quicklinks .box .carts .title a p {
+  font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}/*# sourceMappingURL=profiles.css.map */

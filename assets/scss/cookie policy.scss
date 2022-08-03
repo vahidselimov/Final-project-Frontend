@@ -1,0 +1,67 @@
+main {
+    #titles {
+        .titles {
+            .title {
+                height: 2700px;
+                width: 975px;
+                margin: 0 0 0 98px;
+                padding: 0 15px 0 15px;
+                min-height: 1px;
+
+                .text {
+                    ul {
+                        margin: 25px 0 0 0;
+                        width: 945px;
+                        padding: 0 0 0 40px;
+
+                        li {
+                            list-style: outside;
+                            color: #5f5f5f;
+
+                        }
+                    }
+
+                    .ul {
+                        ul {
+                            li {
+                                list-style: outside;
+
+                                p {
+                                    color: #5f5f5f;
+                                    font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                    line-height: 30px;
+                                    font-size: 18px;
+
+                                    strong {
+                                        color: #111111;
+                                        font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                    }
+
+                                    span {
+                                        a {
+                                            font-family: adobe-garamond-pro, Garamond, Georgia, serif;
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                            color: #16A085;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        span {
+                            a {
+                                text-decoration: none;
+                                color: #16A085;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

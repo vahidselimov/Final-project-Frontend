@@ -95,6 +95,7 @@ header {
   color: #222222;
 }
 .header .menu > .menu-item > .sub-menu {
+  z-index: 100;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   width: 420px;
   position: absolute;
@@ -348,29 +349,28 @@ header {
 }
 
 #picture .container .row #tab-menu .menu {
-  text-align: center;
-  margin-left: 10%;
-  border-bottom: 1px solid #4d4d4d;
+  margin-top: 5%;
   display: flex;
-  cursor: pointer;
+  justify-content: space-around;
+  height: 79px;
+  border-bottom: 1px solid #D4D4D4;
 }
-#picture .container .row #tab-menu .menu div {
-  margin: 20px 5%;
-  padding: 20px;
-  display: inline-block;
+#picture .container .row #tab-menu .menu li {
+  width: 200px;
 }
-#picture .container .row #tab-menu .menu div img {
-  width: 24px;
+#picture .container .row #tab-menu .menu li .image img {
   height: 24px;
-  margin-right: 10px;
+  width: 24px;
+  margin: 0 10px 0 0;
 }
-#picture .container .row #tab-menu .menu div h2 {
-  text-align: center;
+#picture .container .row #tab-menu .menu li .image span {
   font-family: proxima-nova, Lato, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 19.8px;
-  color: rgb(0, 0, 0);
+  line-height: 20px;
+}
+#picture .container .row #tab-menu .menu .active {
+  border-bottom: 2px solid #1ABC9C;
 }
 #picture .container .row #tab-menu .body {
   margin-top: 10%;

@@ -1,0 +1,70 @@
+label {
+    font-size: 14px;
+
+}
+
+input[type="file"] {
+    display: block;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 8%;
+    margin-top: 20%;
+
+
+
+}
+
+.imageThumb {
+    max-height: 145px;
+    padding: 20px;
+    cursor: pointer;
+
+
+
+}
+
+.pip {
+    display: inline-block;
+    margin-top: 20%;
+
+}
+
+.remove {
+    display: block;
+    background: #16a;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background: #167;
+    color: white;
+}
+
+
+
+
+main {
+    margin-top: 10%;
+
+    #downphoto {
+        text-align: center;
+        margin-top: 20%;
+
+        .downphoto {
+            .field {
+
+                h3 {
+                    font-family: 'Times New Roman', Times, serif;
+                    color: #5f5f5f;
+                }
+
+
+
+
+            }
+        }
+
+    }
+}

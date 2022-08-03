@@ -117,6 +117,7 @@ a {
   color: #222222;
 }
 .header .menu > .menu-item > .sub-menu {
+  z-index: 100;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   width: 420px;
   position: absolute;
@@ -373,7 +374,7 @@ a {
   text-align: center;
 }
 
-main #first .text-center {
+#first .text-center {
   position: absolute;
   text-align: center;
   display: flex;
@@ -383,16 +384,16 @@ main #first .text-center {
   top: 18%;
   left: 12%;
 }
-main #first .text-center .container .row .title {
+#first .text-center .container .row .title {
   font-size: 40px;
 }
-main #first .text-center .container .row .text {
+#first .text-center .container .row .text {
   font-size: 18px;
   margin-top: 10px;
   color: #595959;
   font-family: "Arial Narrow", Arial, sans-serif;
 }
-main #first .text-center .container .btn {
+#first .text-center .container .btn {
   font-size: 15px;
   margin-top: 25px;
   border-radius: 4px;
@@ -402,69 +403,20 @@ main #first .text-center .container .btn {
   letter-spacing: 3px;
   border: none;
 }
-main #first .text-center .container .btn a {
+#first .text-center .container .btn a {
   color: #fff;
 }
-main #first .image {
+#first .image {
   position: absolute;
   align-items: center;
   top: 84%;
   left: 48%;
 }
-main #first .image img {
+#first .image img {
   position: static;
   width: 50px;
 }
-main #design {
-  padding: 40px;
-}
-main #design .container {
-  text-align: center;
-}
-main #design .container .row .desg h5 {
-  margin: 20px 0px 15px;
-  color: #AFAFAF;
-}
-main #design .container .row .title {
-  color: #1D1D1D;
-  line-height: 40px;
-  margin: 20px 0px 15px;
-  font-weight: 400;
-  font-size: 32px;
-}
-main #design .container .row .text {
-  color: #5F5F5F;
-  font-size: 18px;
-  line-height: 30.42px;
-  margin: 0px 0px 10px;
-  font-family: adobe-garamond-pro, Garamond, Georgia, serif;
-}
-main #design .container .row .tabmenu .body .item .image img {
-  position: absolute;
-  top: 170%;
-  left: 12%;
-  height: 100%;
-  width: 80%;
-}
-main #design .container .row .tabmenu .body .item .carousel-inner {
-  position: relative;
-  top: 200px;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
-main #design .container .row .tabmenu .body .item .carousel-inner .carousel-item {
-  top: 90%;
-  left: 22%;
-  display: block;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-main #design .container .row .tabmenu .body .item .carousel-inner .carousel-item img {
-  width: 60% !important;
-}
+
 main #socialmedias {
   background-image: url(../images/index-social-bg.jpg);
   width: 100%;
@@ -473,7 +425,7 @@ main #socialmedias {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 40%;
+  margin-top: 10%;
 }
 main #socialmedias .sharing {
   position: absolute;

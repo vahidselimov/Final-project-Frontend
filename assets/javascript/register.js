@@ -11,10 +11,10 @@ function handlePassInput(e) {
     if (passInput.value.length === 0) {
         passLabel.innerHTML = "Strength";
         addClass();
-    } else if (passInput.value.length <= 4) {
+    } else if (passInput.value.length <= 6) {
         passLabel.innerHTML = "Weak";
         addClass("weak");
-    } else if (passInput.value.length <= 7) {
+    } else if (passInput.value.length <= 12) {
         passLabel.innerHTML = "Not Bad";
         addClass("average");
     } else {
@@ -36,7 +36,7 @@ function togglePassInput(e) {
     const type = passInput.getAttribute("type");
     if (type === "password") {
         passInput.setAttribute("type", "text");
-        toggleIcon.innerHTML = "💀";
+        toggleIcon.innerHTML = "👁";
         ripple.style.cssText = `
     border-radius: 4px;
     width: 100%;
@@ -49,7 +49,7 @@ function togglePassInput(e) {
         toggleIcon.style.fontSize = "27px";
     } else {
         passInput.setAttribute("type", "password");
-        toggleIcon.innerHTML = "☠️";
+        toggleIcon.innerHTML = " 👁‍🗨";
         toggleIcon.style.fontSize = "25px";
         ripple.style.cssText = `
     border-radius: 50%;
